@@ -36,6 +36,8 @@ class Solution(object):
             if preNode != newNode:
                 preNode.next = newNode
                 preNode = newNode
+        if flag == 1:
+            preNode.next = ListNode(1)
         return newList
 
 
@@ -55,3 +57,5 @@ node4.next = node5
 node5.next = node6
 ss = Solution()
 ss.addTwoNumbers(node1, node4)
+
+# 考虑 [5] + [5] =====>> [0]-<[1] 的情况
