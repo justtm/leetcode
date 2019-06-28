@@ -1,0 +1,7 @@
+*.js
+*.pyc
+node_modules
+.idea
+.vscode
+package-lock.json
+package.json
